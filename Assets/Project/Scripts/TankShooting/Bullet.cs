@@ -20,6 +20,11 @@ namespace ADOp.TankGame.TankShooting
         private void OnCollisionEnter(Collision collision)
         {
             Destroy(gameObject);
+            Tank tank = collision.gameObject.GetComponent<Tank>();
+            if(tank != null)
+            {
+                tank.GetDamage(m_Damage);
+            }
         }
 
         public void Shoot(Vector3 direction)
