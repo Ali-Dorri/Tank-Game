@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TurretRotator: {fileID: 4672404902787925251}
-  m_RotateSensitivity: 180
+  m_RotateSensitivity: 10
 --- !u!1001 &6523372185533657260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34,6 +34,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1896046161485264303, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+      propertyPath: m_InstantRotate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2620214295209984684, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_Name
       value: Tank_Player
