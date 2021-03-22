@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using ADOp.TankGame.TankShooting;
+using ADOp.TankGame.PlayerControlling;
 
 namespace ADOp.TankGame.UI
 {
@@ -21,6 +22,19 @@ namespace ADOp.TankGame.UI
         private void OnDisable()
         {
             m_Tank.OnGetDamage -= UpdateHealthBar;
+        }
+
+        private void Update()
+        {
+            LookCamera();
+        }
+
+        private void LookCamera()
+        {
+            Vector3 forward = Player.Instance.Camera.transform.position - transform.position;
+            forward.y = 0;
+            Quaternion rotation = Quaternion.LookRotation(forward, Vector3.up);
+            transform.rotation = rotation;
         }
 
         private void UpdateHealthBar(float healthRatio)
