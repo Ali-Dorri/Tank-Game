@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1149076769815382630, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2540331033504423280, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -14,6 +18,10 @@ PrefabInstance:
     - target: {fileID: 2620214295209984684, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_Name
       value: Tank_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620214295209984684, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3393198059680962582, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_RootOrder
@@ -58,6 +66,14 @@ PrefabInstance:
     - target: {fileID: 3393198059680962582, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3446886577751250587, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495935842774859263, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6772263697876091355, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_Materials.Array.data[0]
