@@ -11,8 +11,10 @@ namespace ADOp.TankGame.UI
         [SerializeField] private Slider m_HealthBar;
         [SerializeField] private Image m_HealthFill;
         [SerializeField] private Color m_FullHealthColor = Color.green;
+        [SerializeField] private Color m_MediumHealthColor = Color.yellow;
         [SerializeField] private Color m_LowHealthColor = Color.red;
-        [SerializeField] private float m_MinColorHealthRatio = 0.3f;
+        [SerializeField] private float m_MediumHealthRatio = 0.6f;
+        [SerializeField] private float m_LowHealthRatio = 0.3f;
 
         private void OnEnable()
         {
@@ -41,12 +43,18 @@ namespace ADOp.TankGame.UI
         {
             m_HealthBar.value = healthRatio;
 
-            float colorRatio = healthRatio - m_MinColorHealthRatio;
-            if(colorRatio < 0)
+            if(healthRatio <= m_LowHealthRatio)
             {
-                colorRatio = 0;
+                m_HealthFill.color = m_LowHealthColor;
             }
-            m_HealthFill.color = Color.Lerp(m_LowHealthColor, m_FullHealthColor, colorRatio);
+            else if(healthRatio <= m_MediumHealthRatio)
+            {
+                m_HealthFill.color = m_MediumHealthColor;
+            }
+            else
+            {
+                m_HealthFill.color = m_FullHealthColor;
+            }
         }
     }
 }
