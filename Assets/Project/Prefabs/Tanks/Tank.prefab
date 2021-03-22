@@ -56,10 +56,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e035f599855fe94f8c4c6108543ae9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_TurretDirection: {fileID: 2505050111318253458}
   m_Acceleration: 25
   m_MaxSpeed: 32
   m_Body: {fileID: 3052122941368681169}
-  m_TurretDirection: {fileID: 2505050111318253458}
+  m_RotationSpeed: 100
+  m_MoveTresholdAngle: 30
 --- !u!1001 &2926696359768195069
 PrefabInstance:
   m_ObjectHideFlags: 0
