@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &4210931978863865064
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140796147696727962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.047528557, y: 0.043646708, z: 0.120854594}
+  m_Center: {x: -0.0016253673, y: -1.7769692e-18, z: 0.05584047}
 --- !u!1001 &7140796147696759098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9,7 +22,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a7e4a302d5d9d554db47b2f20bad2971, type: 3}
       propertyPath: m_Name
-      value: SpruceTree_1
+      value: Spruce_1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a7e4a302d5d9d554db47b2f20bad2971, type: 3}
       propertyPath: m_RootOrder
@@ -69,3 +82,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7e4a302d5d9d554db47b2f20bad2971, type: 3}
+--- !u!1 &7140796147696727962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: a7e4a302d5d9d554db47b2f20bad2971, type: 3}
+  m_PrefabInstance: {fileID: 7140796147696759098}
+  m_PrefabAsset: {fileID: 0}

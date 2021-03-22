@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &3943100577262819978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6110694381539016948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027281562, y: 0.026608652, z: 0.115053214}
+  m_Center: {x: -0.011679346, y: 0.0007123515, z: 0.047526613}
 --- !u!1001 &6110694381538920020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9,7 +22,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: cfe4d127c4da3a042886b3b39a9d69dc, type: 3}
       propertyPath: m_Name
-      value: DeadOak1
+      value: Oak_Dead_1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfe4d127c4da3a042886b3b39a9d69dc, type: 3}
       propertyPath: m_RootOrder
@@ -57,3 +70,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfe4d127c4da3a042886b3b39a9d69dc, type: 3}
+--- !u!1 &6110694381539016948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: cfe4d127c4da3a042886b3b39a9d69dc, type: 3}
+  m_PrefabInstance: {fileID: 6110694381538920020}
+  m_PrefabAsset: {fileID: 0}
