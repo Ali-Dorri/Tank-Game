@@ -75,6 +75,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6728675233036897459, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+      propertyPath: m_BulletPrefab
+      value: 
+      objectReference: {fileID: 5871591146939523532, guid: 72acd3a904158054ea9280ffa0ac19d2, type: 3}
     - target: {fileID: 6772263697876091355, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
