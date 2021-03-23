@@ -12,6 +12,7 @@ namespace Adop.TankGame.TankShooting
         [SerializeField] private int m_Damage = 10;
         [SerializeField] private AutoDestroyParticle m_HitTankParticle;
         [SerializeField] private AutoDestroyParticle m_HitObstacleParticle;
+        [SerializeField] private AudioClip m_HitSound;
         private Rigidbody m_Body;
 
         private void Awake()
@@ -48,6 +49,7 @@ namespace Adop.TankGame.TankShooting
         private void DestroyBullet(AutoDestroyParticle explosion)
         {
             PlayExplosion(explosion);
+            AudioSource.PlayClipAtPoint(m_HitSound, transform.position);
             Destroy(gameObject);
         }
 
