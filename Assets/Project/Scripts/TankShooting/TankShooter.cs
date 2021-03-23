@@ -12,7 +12,7 @@ namespace Adop.TankGame.TankShooting
         [SerializeField] private Transform m_ShootPosition;
         [SerializeField] private AutoDestroyParticle m_FireParticlePrefab;
         [SerializeField] private AudioSource m_SoundPlayer;
-        [SerializeField] private AudioClip m_ShootSound;
+        [SerializeField] private VolumedAudioClip m_ShootSound = new VolumedAudioClip(null, 1);
         private float m_FireTime;
 
         public void Shoot()
@@ -33,7 +33,7 @@ namespace Adop.TankGame.TankShooting
 
             AutoDestroyParticle particle = Instantiate(m_FireParticlePrefab, m_ShootPosition.position, Quaternion.identity);
             particle.Play(true);
-            m_SoundPlayer.PlayOneShot(m_ShootSound);
+            m_SoundPlayer.PlayOneShot(m_ShootSound.m_Audio, m_ShootSound.m_Volume);
         }
     }
 }

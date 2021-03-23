@@ -84,7 +84,9 @@ MonoBehaviour:
   m_Damage: 10
   m_HitTankParticle: {fileID: 5146554382404824204}
   m_HitObstacleParticle: {fileID: 5377733272079115855}
-  m_HitSound: {fileID: 8300000, guid: 99b5eea824c2a4915b44598f1c564d53, type: 3}
+  m_HitSound:
+    m_Audio: {fileID: 8300000, guid: 958408b32ccf3714ea02821877b0870c, type: 3}
+    m_Volume: 0.1
 --- !u!1 &5812656002461400836
 GameObject:
   m_ObjectHideFlags: 0

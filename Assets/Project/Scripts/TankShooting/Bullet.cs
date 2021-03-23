@@ -12,7 +12,7 @@ namespace Adop.TankGame.TankShooting
         [SerializeField] private int m_Damage = 10;
         [SerializeField] private AutoDestroyParticle m_HitTankParticle;
         [SerializeField] private AutoDestroyParticle m_HitObstacleParticle;
-        [SerializeField] private AudioClip m_HitSound;
+        [SerializeField] private VolumedAudioClip m_HitSound = new VolumedAudioClip(null, 1);
         private Rigidbody m_Body;
 
         private void Awake()
@@ -30,7 +30,7 @@ namespace Adop.TankGame.TankShooting
             }
             else
             {
-                DestroyBullet(m_HitObstacleParticle);
+                DestroyBullet(m_HitObstacleParticle, m_HitSound);
             }
         }
 
@@ -43,13 +43,21 @@ namespace Adop.TankGame.TankShooting
         private IEnumerator DestroyAfterLifeTime()
         {
             yield return new WaitForSeconds(m_LifeTime);
-            DestroyBullet(m_HitObstacleParticle);
+            DestroyBullet(null);
+        }
+
+        private void DestroyBullet(AutoDestroyParticle explosion, VolumedAudioClip hitSound)
+        {
+            AudioSource.PlayClipAtPoint(hitSound.m_Audio, transform.position, hitSound.m_Volume);
+            DestroyBullet(explosion);
         }
 
         private void DestroyBullet(AutoDestroyParticle explosion)
         {
-            PlayExplosion(explosion);
-            AudioSource.PlayClipAtPoint(m_HitSound, transform.position);
+            if (explosion != null)
+            {
+                PlayExplosion(explosion);
+            }
             Destroy(gameObject);
         }
 
