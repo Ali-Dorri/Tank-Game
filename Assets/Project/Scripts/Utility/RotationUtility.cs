@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ADOp.TankGame
+namespace Adop.TankGame.Utility
 {
     public static class RotationUtility
     {

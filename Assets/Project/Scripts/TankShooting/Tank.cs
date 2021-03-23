@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
+using Adop.TankGame.Utility;
 
-namespace ADOp.TankGame.TankShooting
+namespace Adop.TankGame.TankShooting
 {
     public class Tank : MonoBehaviour
     {
         [SerializeField] private int m_Health = 100;
+        [SerializeField] private AutoDestroyParticle m_Explosion;
         private int m_MaxHealth;
 
         /// <summary>
@@ -33,6 +35,9 @@ namespace ADOp.TankGame.TankShooting
 
                 if(m_Health == 0)
                 {
+                    m_Explosion.transform.SetParent(null, true);
+                    m_Explosion.gameObject.SetActive(true);
+                    m_Explosion.Play(true);
                     gameObject.SetActive(false);
                 }
             }

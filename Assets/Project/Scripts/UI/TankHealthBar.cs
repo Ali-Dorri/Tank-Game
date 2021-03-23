@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-using ADOp.TankGame.TankShooting;
-using ADOp.TankGame.PlayerControlling;
+using Adop.TankGame.TankShooting;
+using Adop.TankGame.PlayerControlling;
 
-namespace ADOp.TankGame.UI
+namespace Adop.TankGame.UI
 {
     public class TankHealthBar : MonoBehaviour
     {

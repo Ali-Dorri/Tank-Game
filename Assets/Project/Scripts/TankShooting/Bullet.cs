@@ -1,8 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Adop.TankGame.Utility;
 
-namespace ADOp.TankGame.TankShooting
+namespace Adop.TankGame.TankShooting
 {
     [RequireComponent(typeof(Rigidbody))]
     public class Bullet : MonoBehaviour
@@ -10,6 +10,8 @@ namespace ADOp.TankGame.TankShooting
         [SerializeField] private float m_LifeTime = 3f;
         [SerializeField] private float m_Speed = 10f;
         [SerializeField] private int m_Damage = 10;
+        [SerializeField] private AutoDestroyParticle m_HitTankParticle;
+        [SerializeField] private AutoDestroyParticle m_HitObstacleParticle;
         private Rigidbody m_Body;
 
         private void Awake()
@@ -19,18 +21,41 @@ namespace ADOp.TankGame.TankShooting
 
         private void OnCollisionEnter(Collision collision)
         {
-            Destroy(gameObject);
             Tank tank = collision.gameObject.GetComponent<Tank>();
             if(tank != null)
             {
                 tank.GetDamage(m_Damage);
+                DestroyBullet(m_HitTankParticle);
+            }
+            else
+            {
+                DestroyBullet(m_HitObstacleParticle);
             }
         }
 
         public void Shoot(Vector3 direction)
         {
             m_Body.velocity = direction.normalized * m_Speed;
-            Destroy(gameObject, m_LifeTime);
+            StartCoroutine(DestroyAfterLifeTime());
+        }
+
+        private IEnumerator DestroyAfterLifeTime()
+        {
+            yield return new WaitForSeconds(m_LifeTime);
+            DestroyBullet(m_HitObstacleParticle);
+        }
+
+        private void DestroyBullet(AutoDestroyParticle explosion)
+        {
+            PlayExplosion(explosion);
+            Destroy(gameObject);
+        }
+
+        private void PlayExplosion(AutoDestroyParticle particle)
+        {
+            particle.transform.SetParent(null, true);
+            particle.gameObject.SetActive(true);
+            particle.Play(true);
         }
     }
 }

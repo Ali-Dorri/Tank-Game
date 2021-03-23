@@ -1,7 +1,7 @@
 using UnityEngine;
-using ADOp.TankGame.TankControlling;
+using Adop.TankGame.TankControlling;
 
-namespace ADOp.TankGame.PlayerControlling
+namespace Adop.TankGame.PlayerControlling
 {
     public class PlayerMover : MonoBehaviour
     {

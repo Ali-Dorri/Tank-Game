@@ -1,7 +1,7 @@
 using UnityEngine;
-using ADOp.TankGame.TankControlling;
+using Adop.TankGame.TankControlling;
 
-namespace ADOp.TankGame.EnemyControlling
+namespace Adop.TankGame.EnemyControlling
 {
     public class EnemyMover : MonoBehaviour
     {

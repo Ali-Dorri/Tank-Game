@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1969306013113664248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787679514867990281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6375057164b30a4c961ba6a24051527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TurretRotator: {fileID: 5186140167846021130}
+  m_TankShooter: {fileID: 56799155865563414}
+  m_MinDelay: 1
+  m_MaxDelay: 5
 --- !u!114 &2615520031263766735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,26 +33,10 @@ MonoBehaviour:
   m_MaxMoveDistance: 20
   m_ReachDistance: 3
   m_MaxReachDuration: 6
-  m_MinStopWaitTime: 1
+  m_MinStopWaitTime: 2
   m_MaxStopWaitTime: 5
   m_MinInitialMoveDelay: 0.1
   m_MaxInitialMoveDelay: 2
---- !u!114 &1969306013113664248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8787679514867990281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6375057164b30a4c961ba6a24051527, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TurretRotator: {fileID: 5186140167846021130}
-  m_TankShooter: {fileID: 56799155865563414}
-  m_MinDelay: 1
-  m_MaxDelay: 5
 --- !u!1001 &6748860582973848997
 PrefabInstance:
   m_ObjectHideFlags: 0

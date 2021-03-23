@@ -1,9 +1,9 @@
 using UnityEngine;
-using ADOp.TankGame.TankControlling;
-using ADOp.TankGame.TankShooting;
-using ADOp.TankGame.PlayerControlling;
+using Adop.TankGame.TankControlling;
+using Adop.TankGame.TankShooting;
+using Adop.TankGame.PlayerControlling;
 
-namespace ADOp.TankGame.EnemyControlling
+namespace Adop.TankGame.EnemyControlling
 {
     public class EnemyShooter : MonoBehaviour
     {

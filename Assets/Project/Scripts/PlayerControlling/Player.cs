@@ -1,7 +1,7 @@
 using UnityEngine;
-using ADOp.TankGame.TankShooting;
+using Adop.TankGame.TankShooting;
 
-namespace ADOp.TankGame.PlayerControlling
+namespace Adop.TankGame.PlayerControlling
 {
     public class Player : MonoBehaviour
     {
