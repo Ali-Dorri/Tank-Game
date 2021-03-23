@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Adop.TankGame.TankShooting;
 
 namespace Adop.TankGame.PlayerControlling
@@ -9,7 +10,7 @@ namespace Adop.TankGame.PlayerControlling
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
             {
                 m_Shooter.Shoot();
             }

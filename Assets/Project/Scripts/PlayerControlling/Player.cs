@@ -52,6 +52,7 @@ namespace Adop.TankGame.PlayerControlling
             if(healthRatio <= 0)
             {
                 DetachCamera();
+                GameManager.Instance.MarkPlayerDeath();
             }
         }
 
