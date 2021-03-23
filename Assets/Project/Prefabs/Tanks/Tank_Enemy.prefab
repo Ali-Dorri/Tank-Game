@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2615520031263766735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787679514867990281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753c3f6645487dc4787b295b75c587da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Mover: {fileID: 4879378493943693732}
+  m_MinMoveDistance: 6
+  m_MaxMoveDistance: 20
+  m_ReachDistance: 3
+  m_MaxReachDuration: 6
+  m_MinStopWaitTime: 1
+  m_MaxStopWaitTime: 5
+  m_MinInitialMoveDelay: 0.1
+  m_MaxInitialMoveDelay: 2
 --- !u!1001 &6748860582973848997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,3 +106,19 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6997e1e24b9167b4c9a938ba178d33df, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+--- !u!1 &8787679514867990281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2620214295209984684, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+  m_PrefabInstance: {fileID: 6748860582973848997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4879378493943693732 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2170677923482926081, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+  m_PrefabInstance: {fileID: 6748860582973848997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787679514867990281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e035f599855fe94f8c4c6108543ae9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
