@@ -21,6 +21,22 @@ MonoBehaviour:
   m_MaxStopWaitTime: 5
   m_MinInitialMoveDelay: 0.1
   m_MaxInitialMoveDelay: 2
+--- !u!114 &1969306013113664248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787679514867990281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6375057164b30a4c961ba6a24051527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TurretRotator: {fileID: 5186140167846021130}
+  m_TankShooter: {fileID: 56799155865563414}
+  m_MinDelay: 1
+  m_MaxDelay: 5
 --- !u!1001 &6748860582973848997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,6 +127,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2620214295209984684, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
   m_PrefabInstance: {fileID: 6748860582973848997}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5186140167846021130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1896046161485264303, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+  m_PrefabInstance: {fileID: 6748860582973848997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787679514867990281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f5711655edb0549a7891c24c3ab4e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4879378493943693732 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2170677923482926081, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
@@ -120,5 +147,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e035f599855fe94f8c4c6108543ae9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &56799155865563414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6728675233036897459, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+  m_PrefabInstance: {fileID: 6748860582973848997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787679514867990281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e79459b4ccbe04d92ec6d33acb2c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

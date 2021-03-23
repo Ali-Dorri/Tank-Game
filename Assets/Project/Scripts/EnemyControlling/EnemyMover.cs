@@ -47,6 +47,7 @@ namespace ADOp.TankGame.EnemyControlling
             }
         }
 
+#if UNITY_EDITOR
         private void OnDrawGizmos()
         {
             Color previousColor = Gizmos.color;
@@ -57,6 +58,7 @@ namespace ADOp.TankGame.EnemyControlling
             Gizmos.DrawLine(currentPoint, m_MoveTarget + Vector3.up);
             Gizmos.color = previousColor;
         }
+#endif
 
         private void Move()
         {

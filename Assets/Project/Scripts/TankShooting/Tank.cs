@@ -26,11 +26,15 @@ namespace ADOp.TankGame.TankShooting
                 if (m_Health <= 0)
                 {
                     m_Health = 0;
-                    Destroy(gameObject);
                 }
 
                 float healthRatio = m_Health / (float)m_MaxHealth;
                 OnGetDamage?.Invoke(healthRatio);
+
+                if(m_Health == 0)
+                {
+                    gameObject.SetActive(false);
+                }
             }
         }
     }

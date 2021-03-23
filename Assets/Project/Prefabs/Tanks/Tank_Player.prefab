@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81f4d662aca8e244b3f27ac3774d781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Tank: {fileID: 5699828689148051122}
   m_Camera: {fileID: 8866766857580716419}
 --- !u!1001 &814154632824406677
 PrefabInstance:
@@ -209,6 +210,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2620214295209984684, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
   m_PrefabInstance: {fileID: 6523372185533657260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5699828689148051122 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1557813975727099422, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
+  m_PrefabInstance: {fileID: 6523372185533657260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141026811218620928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc256455c12fea0409474b090c6cc710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4672404902787925251 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1896046161485264303, guid: f90a68dd956ff81459fa0a8052c56966, type: 3}
