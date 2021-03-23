@@ -16,8 +16,10 @@ namespace Adop.TankGame.TankControlling
         [Header("Body Rotation")]
         [Tooltip("Speed of rotating body")]
         [SerializeField] private float m_RotationSpeed = 100;
-        [Tooltip("Maximum angle between move direction and body direction which tank can move")]
+        [Tooltip("Maximum angle between move direction and body direction which tank can start moving.")]
         [SerializeField] private float m_MoveTresholdAngle = 30f;
+        [Tooltip("Maximum angle between move direction and body direction which tank stop rotation when reach it.")]
+        [SerializeField] private float m_RotationReachAngle = 5f;
 
         public Transform TurretDirection => m_TurretDirection;
 
@@ -51,10 +53,15 @@ namespace Adop.TankGame.TankControlling
         private void RotateBody()
         {
             Vector3 targetDirection = new Vector3(m_Direction.x, 0, m_Direction.y);
-            Quaternion rotation = RotationUtility.Rotate(m_Body.transform.forward, targetDirection, Vector3.up
+            float maxRotationAngle = Vector3.Angle(m_Body.transform.forward, targetDirection);
+
+            if (maxRotationAngle > m_RotationReachAngle)
+            {
+                Quaternion rotation = RotationUtility.Rotate(m_Body.transform.forward, targetDirection, Vector3.up
                 , m_RotationSpeed * Time.fixedDeltaTime);
-            Quaternion newRotation = m_Body.rotation * rotation;
-            m_Body.MoveRotation(newRotation);
+                Quaternion newRotation = m_Body.rotation * rotation;
+                m_Body.MoveRotation(newRotation);
+            }
         }
     }
 }
